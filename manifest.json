@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "FreshRSS RSS Finder",
-    "description": "Retreive RSS feeds URLs from WebSite and import to FreshRSS",
-    "version": "2.0.0",
-    "author": "@shevabam",
-    "homepage_url": "https://github.com/shevabam/get-rss-feed-url-extension",
+    "name": "FreshRSS Feed Finder",
+    "description": "Retreive RSS feed URLs from websites and import to FreshRSS",
+    "version": "1.0.0",
+    "author": "@computersandstuff",
+    "homepage_url": "https://github.com/computersandstuff/FreshRSS-Chrome-RSS-Finder",
     "permissions": [
         "http://*/*",
         "https://*/*",
@@ -19,7 +19,7 @@
     },
     "background": {
         "page": "background.html",
-        "persistent": false
+        "persistent": false	
     },
     "icons": {
         "128" : "img/icon_128.png"
