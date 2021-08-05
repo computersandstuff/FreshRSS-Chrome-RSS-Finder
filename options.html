@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/options.css">
+	<title>FreshRSS RSS Finder Options</title>
+  </head>
+  <script src="js/options.js"></script>
+  <body>
+    <div class="container">
+  <div class="container2">
+	<h3 class="mainHeading">Options</h3>
+	
+	<input type="checkbox" id="exactUrlCheck" name="useExactUrl">
+	<label class="bodyText" for="exactUrlCheck"> Use exact URL for FreshRSS feed import</label><br>
+	<p class="bodyText">URL to FreshRSS Instance</p>
+	
+	<input class="mainInput" type="text" id="serverUrl" placeholder="Freshrss URL" value=""> <br>
+	<p class="bodyText" id="serverUrlExample">Example: <br>http://192.168.1.15:84/i/  <br>  https://demo.freshrss.org/i/</p>
+	
+
+	<br><button class="saveButton" id="saveButton">Save</button>
+	
+	</div>
+	<p class="bodyText" id="status"></p>
+	</div>
+  </body>
+</html>
