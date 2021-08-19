@@ -23,11 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 for (i = 0; i < feeds.length; i++) {
                     html += '<tr>';
                     html +=   '<td class="feed-title">';
-                    html +=     '<a class="link" href="'+serverUrl+feeds[i].url+'" title="Add feed to FreshRSS" data-tabtitle="'+tab.title+'" target="_blank">'+feeds[i].title+'</a>';
+                    html +=     '<a class="link" href="'+serverUrl+feeds[i].url+'" title="'+feeds[i].title+'" data-tabtitle="'+tab.title+'" target="_blank">'+feeds[i].title+'</a>';
                     html +=     '<span class="feed-url">'+truncate(feeds[i].url, 50)+'</span>';
                     html +=   '</td>';
                     html +=   '<td class="feed-copy">';
-                    html +=     '<a class="copyButton copyLink" title="Copy feed URL" href="#">Copy URL</a>';
+					html +=     '<a class="copyButton" title="Add feed to FreshRSS" style="float:right" href="'+serverUrl+feeds[i].url+'"target="_blank">FreshRSS</a>';
+                    html +=     '<a class="copyButton copyLink" title="Copy feed URL" style="float:right" href="#">Copy URL</a>';
                     html +=   '</td>';
                     html += '</tr>';
                 }
